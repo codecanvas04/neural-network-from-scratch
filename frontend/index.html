@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Neural Digit Recognizer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <h1>Neural Digit Recognizer</h1>
+
+            <p class="subtitle">
+                Draw a digit and let a neural network recognize it.
+            </p>
+        </header>
+
+
+        <div class="main-content">
+
+            <!-- Drawing Card -->
+
+            <div class="drawing-section">
+
+                <h2>Draw a digit</h2>
+
+                <div class="canvas-wrapper">
+                    <canvas
+                        id="canvas"
+                        width="280"
+                        height="280">
+                    </canvas>
+                </div>
+
+                <div class="buttons">
+
+                    <button id="clearBtn">
+                        Clear
+                    </button>
+
+                    <button id="predictBtn">
+                        Predict
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Prediction Card -->
+
+            <div class="result-section">
+
+                <h2>Prediction</h2>
+
+                <p class="prediction-label">
+                    The neural network thinks it's
+                </p>
+
+                <div id="prediction">
+                    ?
+                </div>
+
+                <p id="confidence">
+                    Draw a digit to get started.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Model Information -->
+
+        <div class="model-info">
+
+            <div class="info-item">
+                MNIST Dataset
+            </div>
+
+            <div class="info-item">
+                784 Input Nodes
+            </div>
+
+            <div class="info-item">
+                128 Hidden Nodes
+            </div>
+
+            <div class="info-item">
+                10 Output Classes
+            </div>
+
+            <div class="info-item">
+                Neural Network from Scratch
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
