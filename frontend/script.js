@@ -294,7 +294,7 @@ predictBtn.addEventListener("click", async () => {
     try {
 
         const response = await fetch(
-            "https://neural-network-from-scratch-630s.onrender.com/",
+            "https://neural-network-from-scratch-630s.onrender.com/predict",
             {
                 method: "POST",
 
